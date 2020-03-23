@@ -42,6 +42,8 @@ public class Main {
             }
             n10++;
         }
+        //spacer
+        System.out.println("-------3--------");
         //#3
         String denNedeli = "Monday";
         switch (denNedeli) {
@@ -55,9 +57,11 @@ public class Main {
                 System.out.println("Working day");
                 break;
         }
+        //spacer
+        System.out.println("-------4-------");
         //#4 факториал числа
         int factorialOtChisla = 0;
-        int resultatVicisleniyaFactoriala = 1;
+        int resultatVichisleniyaFactoriala = 1;
 
 
 
