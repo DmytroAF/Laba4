@@ -25,7 +25,7 @@ import org.w3c.dom.ls.LSOutput;
 public class Main {
 
     public static void main(String[] args) {
-        //2, фор, иф, свич, инкремент, остаток от деления, брейк
+        //#2, фор, иф, свич, инкремент, остаток от деления, брейк
         int n10 = 0;
         for (int i = 0; i < 10; i++) {
             if (n10 == 0) {
@@ -42,6 +42,24 @@ public class Main {
             }
             n10++;
         }
+        //#3
+        String denNedeli = "Monday";
+        switch (denNedeli) {
+            case "Sunday":
+                System.out.println("Holyday");
+                break;
+            case "Saturday":
+                System.out.println("Holyday");
+                break;
+            default:
+                System.out.println("Working day");
+                break;
+        }
+        //#4 факториал числа
+        int factorialOtChisla = 0;
+        int resultatVicisleniyaFactoriala = 1;
+
+
 
     }
 }
