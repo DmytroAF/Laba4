@@ -24,12 +24,23 @@ import org.w3c.dom.ls.LSOutput;
 //        5. Написать программу, которая выводит на экран каждое 3-е i-ое значение цикла.
 public class Main {
 
-    //2
+    //2, фор, иф, свич, инкремент, остаток от деления, брейк
     public static void main(String[] args) {
         int n10 = 0;
         for (int i = 0; i < 10; i++) {
-            n10 % 2 = 0 ? System.out.println(n10"--> chetnoe") : System.out.println(n10"--> nechetnoe");
-            n10 += 1;
+            if (n10 == 0) {
+                System.out.println(n10 + " - чётность нуля вызывает сомнения в среде людей, недостаточно знакомых с математикой");
+                n10++;
+            }
+            switch (n10%2) {
+                case 0:
+                    System.out.println(n10 + " - чет");
+                    break;
+                case 1:
+                    System.out.println(n10 + " - нечет");
+                    break;
+            }
+            n10++;
         }
 
     }
