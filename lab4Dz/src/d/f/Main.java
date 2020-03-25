@@ -2,12 +2,14 @@ package d.f;
 
 import org.w3c.dom.ls.LSOutput;
 
+import java.sql.SQLOutput;
+
 //1. Решить логические вычисления:
-//        a. true && false || true && !false
-//        b. false || false || !true && false
-//        c. !false && (false || true && true)
-//        d. 4 > 8 && !(7 == 0)
-//        e. !(true && false || false && true) && !(true && 4 <= 5)
+//        a. true && false || true && !false = false
+//        b. false || false || !true && false = false
+//        c. !false && (false || true && true) = false
+//        d. 4 > 8 && !(7 == 0) = false
+//        e. !(true && false || false && true) && !(true && 4 <= 5) = false
 //        2. Написать программу, которая выводит на экран (с новой строки) числа от 0 до 10
 //        и возле каждого пишет четное это число или нечетное.
 //        Пример
@@ -32,7 +34,7 @@ public class Main {
                 System.out.println(n10 + " - чётность нуля вызывает сомнения в среде людей, недостаточно знакомых с математикой");
                 n10++;
             }
-            switch (n10%2) {
+            switch (n10 % 2) {
                 case 0:
                     System.out.println(n10 + " - чет");
                     break;
@@ -60,10 +62,32 @@ public class Main {
         //spacer
         System.out.println("-------4-------");
         //#4 факториал числа
-        int factorialOtChisla = 0;
+        int factorialOtChisla = 10;
         int resultatVichisleniyaFactoriala = 1;
+        for (int i = 1; i <= factorialOtChisla; i++) {
+            resultatVichisleniyaFactoriala = resultatVichisleniyaFactoriala * i;
+            System.out.println(resultatVichisleniyaFactoriala);
+            if (resultatVichisleniyaFactoriala > 1000) {
+                System.out.println("Dostignut resultat over 1000");
+                break;
+            }
 
 
+        }
+        System.out.println("-------5-------");
+        //#5 вывод каждого 3 значения, для генерации значения используем часть кода задания 4
+        //добавляем счетчик итераций
+        int factorialOtChisla1 = 15;
+        int resultatVichisleniyaFactoriala1 = 1;
+        int tripleCounter = 0;
+        for (int i = 1; i <= factorialOtChisla1; i++) {
+            resultatVichisleniyaFactoriala1 = resultatVichisleniyaFactoriala1 * i;
+            tripleCounter++;
+            if (tripleCounter%3 == 0) {
+                System.out.println("Next third value - " + resultatVichisleniyaFactoriala1);
+            }
 
+
+        }
     }
 }
